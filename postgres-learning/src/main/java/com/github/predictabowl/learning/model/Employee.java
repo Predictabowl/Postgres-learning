@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Employee {
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(generator = "increment")
 	private Long id;
 	
 	private String name;
